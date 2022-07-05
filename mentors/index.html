@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Guide selection form</title>
+    <!-- Cool Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <!-- Our stylesheet -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <h2>SATHYABAMA INSTITUTE OF SCIENCE AND TECHNOLOGY..</h2>
+    <div id="content_container">
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header"> MENTOR SELECTION FORM </h2>
+            </div>
+
+            <div id="form_content_container">
+                <div id="form_content_inner_container">
+                    <input type="text" id="full_name" placeholder="Full name">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="Register_Number" placeholder="Register number">
+                    <input type="text" id="Phone_Number" placeholder="Phone_Number">
+                    <input type="text" id="Department" placeholder="Department">
+                    <form action="/action_page.php">
+                        <label for="cars">Choose Your Guide:</label>
+                        <select name="cars" id="Guide" required>
+                            <option value="">"Select your guide</option>
+                            <option value="volvo">Dr.R.Subhashini</option>
+                            <option value="saab">Dr.S.Gowri</option>
+                            <option value="mercedes">Dr Jabez J</option>
+                            <option value="audi">NIRMALRANI V</option>
+                            <option value="">"Dr.S.Revathy</option>
+                            <option value="volvo">Dr.L.Mary Gladence</option>
+                            <option value="saab">Dr P AJITHA</option>
+                            <option value="mercedes">Dr.Y.BEVISH JINILA</option>
+                            <option value="audi">Dr.P.Jeyanthi</option>
+                            <option value="">"Dr.R.M.Gomathi</option>
+                            <option value="volvo">Dr.Senduru Srinivasulu</option>
+                            <option value="saab">Dr.A.Sivasangari</option>
+                            <option value="mercedes">Brumancia </option>
+                            <option value="audi">Dr.G.Mathivanan</option>
+                            <option value="audi">Dr.R.Jeberson Retna Raj </option>
+                        </select>
+                        <br><br>
+                    </form>
+
+
+                    <div id="button_container">
+                        <a href="Guidedetail.html"><button onclick="login()">View Guide</button></a>
+                        <button onclick="register()">Register</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<!-- Our script must be loaded after firebase references -->
+<script src="index.js"></script>
